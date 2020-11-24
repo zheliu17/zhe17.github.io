@@ -1,136 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <head> 
+  <!-- Required meta tags --> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+  <!-- Bootstrap CSS --> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" /> 
+  <!-- Optional JavaScript --> 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  <!-- Place your kit's code here --> 
+  <script src="https://kit.fontawesome.com/1e99d08684.js" crossorigin="anonymous"></script> 
+  <title>Zhe Liu</title> 
+  <link rel="icon" href="img/icon.ico" /> 
+  <link rel="shortcut icon" href="img/icon.ico" /> 
+ </head> 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <body> 
+  <div class="container-md"> 
+   <div class="row"> 
+    <div class="col-md-3 text-center "> 
+     <hr class="d-none d-md-block" /> 
+     <img src="img/Zheliu.jpg" class="img-fluid rounded mx-auto d-none d-md-block" width="202.5" /> 
+    </div> 
+    <div class="col-md-9"> 
+     <h3>Zhe Liu</h3> 
+     <h5>zhe17@ualberta.ca <i class="far fa-question-circle" style="color:#007bff;" href="#email" data-toggle="collapse"></i> </h5> 
+     <div id="email" class="collapse"> 
+      <p>You can also reach me via zhe.liu@rwth-aachen.de</p>
+      <p>I can't receive any email sent to liuzhe97@mail.dlut.edu.cn after May 2020</p> 
+      <p>Pronunciation of my name: Zhé <a href="https://en.wiktionary.org/wiki/zh%C3%A9">喆 </a> Liú <a href="https://en.wiktionary.org/wiki/li%C3%BA">刘</a></p> 
+     </div> 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <div id="switch"> 
+      <p><a href="#About">About</a>&nbsp;&nbsp;&nbsp;<a href="#Research">Research Experience</a>&nbsp;&nbsp;&nbsp;<a href="#Other">Other Experience</a></p> 
+     </div> 
+     <!--
+      <button type="button" class="btn btn-info">Overview</button>
+      <button type="button" class="btn btn-info">Projects</button>
+      <button type="button" class="btn btn-info">Experience</button>
+    --> 
+     <hr /> 
 
-    <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/1e99d08684.js" crossorigin="anonymous"></script>
- 
-    <title>Zhe Liu</title>
-    <link rel="icon" href="img/icon.ico">
-    <link rel="shortcut icon" href="img/icon.ico">
-  </head>
-  <body>
-    <div class="container-md">
-  <div class="row">
-    <div class="col-md-3 text-center ">
-    	<hr class="d-none d-md-block"> 
-    	<img src="img/Zheliu.jpg" class="img-fluid rounded mx-auto d-none d-md-block" width="202.5">
-    </div>
-    <div class="col-md-9">
-    	<h3>Zhe Liu</h3>
-    	<h5>zhe17@ualberta.ca <i class="far fa-question-circle" href="#email" data-toggle="collapse"></i> 
-    	</h5>
+     <script>
+      $(function () {
+          $('#switch a').click(function (e) {
+              e.preventDefault();
+              $('.nav-tabs a[href="' + $(this).attr('href') + '"]').tab('show');
+          })
+      });
+     </script> 
 
-    	 <div id="email" class="collapse">
-    	<p>I can't receive any email sent to liuzhe97@mail.dlut.edu.cn after May 2020</p>
-    	<p>Pronunciation of my name: Zhe <a href="https://en.wiktionary.org/wiki/zh%C3%A9">喆 </a> Liu <a href="https://en.wiktionary.org/wiki/li%C3%BA">刘</a></p>
-  </div>
-    	<p><a href="#About">About</a>&nbsp;&nbsp;&nbsp;<a href="#Research">Research Experience</a>&nbsp;&nbsp;&nbsp;<a href="#Other">Other Experience</a></p>
-    <!--
-    	<button type="button" class="btn btn-info">Overview</button>
-    	<button type="button" class="btn btn-info">Projects</button>
-    	<button type="button" class="btn btn-info">Experience</button>
-    -->
-    <hr>
-		<img src="img/Zheliu.jpg" class="float-left img-fluid rounded d-block d-md-none" width="130" style="margin-right:10px">
-    	<p id="About">Hi, nice to see you! </p>
-    	<p>
-    	I am a first year master student from the Department of Chemistry, University of Alberta, working with Prof. <a href="http://www.chem.ualberta.ca/~hanna/people.html">Gabriel Hanna</a>. I am currently doing theoretical chemistry research. We are developing the new dynamics methodologies of the mixed quantum-classical system, based on the quantum-classical Liouville equation (<a href="https://aip.scitation.org/doi/10.1063/1.478811">QCLE</a>).
-	</p>
-		<p>I received my Bachelor of Science degree from the <a href="http://zdysc.dlut.edu.cn/">Zhang Dayu School of Chemistry</a>, Dalian University of Technology. I am very proud of being a member of this class. I was also a visiting student at the <a href="http://english.dicp.cas.cn/">Dalian Institute of Chemical Physics</a>, CAS, (Advisor, Prof. <a href="http://people.ucas.ac.cn/~0010415?language=en">Hongjun Fan</a>) and the University of Calgary (<a href="https://www.mitacs.ca/en/programs/globalink">Mitacs Globalink Program</a>,
-		 Advisor, Prof. <a href="http://people.ucalgary.ca/~pkusalik/">Peter Kusalik</a>). Click <a href="doc/Zhe Liu CV.pdf">here</a> for my full CV.
-	</p>
-    <p>Before joining the University of Alberta, I did some projects in computational chemistry. My previous research includes the photocatalysis of titanium dioxide, the ab-initio molecular dynamics simulations of hydroxyl radical in aqueous solution, the solvation process in lithium battery electrolytes, and so forth. I am interested in almost everything in theoretical and computational chemistry, and always open to starting new research.
-  </p>
-		<p>In my computational chemistry projects, I used VASP, <a href="http://www.p4vasp.at">p4vasp</a>, <a href="http://jp-minerals.org/vesta/en/">VESTA</a>, CPMD, VMD, Gnuplot, and Gaussian under Windows and/or Linux operating systems. I also have the experience in MATLAB, Python, Fortran and LaTex. 
-	</p>
-		<p>Apart from these, I am a <a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a> player (You must have heard of AlphaGo!). I also enjoy visiting meseums, hiking and travelling during my leisure time.</p>
-	<hr>
-	<h5 id="Research">Research Experience:</h5>
-	<dl>
-		<dt>Theoretical Chemistry</dt>
-		<dd></dd>
-		<dd><b>Mixed Quantum-Classical Liouville Dynamics in the Position Representation</b> <i class="far fa-question-circle" href="#mixed" data-toggle="collapse"></i> <br/>
-			<div id="mixed" class="collapse">
-    		<span>This project and publications are in progress. Title and contents may change.</span>
-  			</div>
-			<i>Advisor, Prof. <a href="http://www.chem.ualberta.ca/~hanna/people.html">Gabriel Hanna</a></i>  <span style="float: right">Nov. 2019 - Present</span> <br/>
-			The quantum-classical Liouville equation (QCLE) allows us to calculate the quantum dynamics of the subsystem exactly, which is bilinearly coupled with the classic environments, e.g., the surface hopping problem. Our newly developed <a href="https://pubs.acs.org/doi/10.1021/acs.jpclett.8b01619">algorithms</a> have been proved that can solve the QCLE with high accuracy and low computational cost. Now we are interested in some theoretical and practical models (e.g., the <a href="https://aip.scitation.org/doi/10.1063/1.464727">Azzouz-Borgis picture</a>) and trying to apply our new methodology into these problems.</dd>
-		<dt>Computational Chemistry</dt>
-		<dd></dd>
-			<dd><b>Theoretical Studies on the Structures and Properties of TiO<sub>2</sub> Surface Adsorbed by Metal Atom</b> <i class="far fa-question-circle" href="#TiO2" data-toggle="collapse"></i><br/>
-			<div id="TiO2" class="collapse">
-    		<span>This project is my undergraduate graduation thesis. The language of the thesis is <b>not English</b>. Contact me for full thesis and slides.
-  			</div>
-			<i>Advisor, Prof. <a href="http://people.ucas.ac.cn/~0010415?language=en">Hongjun Fan</a></i>  <span style="float: right">Jan. 2019 - June 2019</span> <br/>
-			By absorbing transition metals on the surface, the photocatalytic properties of titanium dioxide (Rutile) may increase. In this research, we calculated the single atom loaded rutile surface. We studied three different surfaces, stoichiometric TiO<sub>2</sub> and two different reduced TiO<sub>2</sub> (In plane oxygen vacancy and bridging oxygen vacancy. Previous studies of the first vacancy were insufficient). The results provided us the adsorption energy of metals, geometry and electronic structures, and potential catalytic properties of the loaded surfaces. We also discussed the difference between different metals and absorption sites.
-		</dd>
-		<dd><b>Probing reactions of the hydroxyl radical in aqueous environments</b> <i class="far fa-question-circle" href="#OHradical" data-toggle="collapse"></i>
-			<br/>
-			<div id="OHradical" class="collapse">
-    		<span><i>Collaborator: <a href="https://www.linkedin.com/in/carlos-enriquez-victorero-9518317b/">Carlos Enriquez-Victorero</a></i></span>
-  			</div>
-			<i>Advisor, Prof. <a href="http://people.ucalgary.ca/~pkusalik/">Peter Kusalik</a></i>  <span style="float: right">July 2018 - Oct. 2018</span> <br/>
-			We performed ab-initio molecular dynamics simulations (Car–Parrinello molecular dynamics, <a href="https://www.cpmd.org/wordpress/">CPMD</a>) for hydroxyl radical and chlorine in aqueous solution. The CPMD method introduced the fictitious electron mass to prevent time-consuming self-consistent calculation in each time step. The simulations provided a description of the geometry and electronics structures of  hydroxyl radical and chlorine, and the interactions between them and water molecules. Our results helped us understand the influence of different electron mass.
-		</dd>
-		<dd><b>Theoretical studies on the solvated structures and properties of lithium ions in dimethyl carbonate</b><br/>
-			<i>Advisor, Prof. <a href="http://people.ucas.ac.cn/~0010415?language=en">Hongjun Fan</a></i>  <span style="float: right">June 2017 - June 2018</span> <br/>
-			We have noted an abnormal increasing of the coordination number of lithium in Dimethyl Carbonate (DMC, a commonly used electrolyte in Lithium batteries) when decreasing the concentrations. To investigate this phenomenon, we calculated the solvation energies and structures of the lithium solution complex. We also proposed some improvement methods for our previous coordination number <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.6b01664">measurement</a>.
-	</dl>
-	<hr>
-	<h5 id="Other">Other Experience:</h5>
-	<dl>
-		<dt>Teaching Experience</dt>
-		<dd></dd>
-		<dd><b>CHEM 10X</b> General Chemistry Experiments </br>
-		Teaching Assistant <span style="float: right">Jan. 2020 - Present</span></br>
-		<b>CHEM 303</b>  Environmental Chemistry &nbsp; <i>Course Instructor: Prof. <a href="https://spaces.facsci.ualberta.ca/gibbs/">Julianne M Gibbs</a></i> </br>
-		Teaching Assistant <span style="float: right; ">Sep. 2019 - Dec. 2019</span>
-		</dd>
-		<dt>AIChE Chem-E-Car Competition <span style="float: right; font-weight: normal">Mar. 2017 - Sep. 2017</span> </dt>
-		<dd>
-			      <div class="entry-content">
-       	<ul>
-          <li>About this <a href="https://www.aiche.org/community/students/chem-e-car">Competition</a></li>
-          <li>I am a member of the team of Dalian University of Technology. We won <a href="https://www.aiche.org/chenected/2017/06/northwest-university-wins-first-ever-chem-e-car-competitionr-china">the second plcae</a> among 17 top universities in China.</li>
-          <li>My work included developing a mathematical model to predict the time of iodine-clock reaction</li>
-        </ul>
-      </div>
-		</dd>
-		<dt>Select Awards and Scholarships</dt>
-		<dd>Globalink Graduate Fellowship, <a href="https://www.mitacs.ca/en/programs/globalink/globalink-graduate-fellowship">Mitacs</a> <span style="float: right">2019</span></br>
-		Outstanding Graduates, Dalian University of Technology <span style="float: right">2019</span></br>
-		CSC (China Scholarship Council) scholarship, China Scholarship Council <span style="float: right">2018</span></br>
-		DICP scholarship, Dalian Institute of Chemical Physics <span style="float: right">2015 - 2016, 2016 - 2017</span></br>
-		</dd>
-	</dl>
-	<p></p>
-	<p></p>
-	<p></p>
-	<p></p>
-    </div>
-  </div>
-</div>
-
-<hr>
-   <footer class="footer">
-   <div class="container-md">
-         <p>Last update 5 Feb. 2020</p>
-     </div>
-   </div>
-   </footer>
-
-  </body>
+     <div class="tabbable"> 
+      <ul class="nav nav-tabs d-none"> 
+       <li class="active"><a href="#About" data-toggle="tab">Section 1</a> </li> 
+       <li><a href="#Research" data-toggle="tab">Section 2</a> </li> 
+       <li><a href="#Other" data-toggle="tab">Section 3</a> </li> 
+      </ul> 
+      <div class="tab-content"> 
+       <div class="tab-pane active" id="About"> 
+        <img src="img/Zheliu.jpg" class="float-left img-fluid rounded d-block d-md-none" width="130" style="margin-right:10px" /> 
+        <p>Hi, nice to see you! </p> 
+        <p> I am a second year thesis-based master student at the Department of Chemistry, University of Alberta, working with Prof. <a href="http://www.chem.ualberta.ca/~hanna/people.html">Gabriel Hanna</a>. I am doing theoretical chemistry research. We are developing the new dynamics methodologies of the mixed quantum-classical system, based on the quantum-classical Liouville equation (<a href="https://aip.scitation.org/doi/10.1063/1.478811">QCLE</a>). </p> 
+        <p>Currently, I am also a visiting student at the RWTH Aachen University (Advisor, Prof. <a href="https://www.ltt.rwth-aachen.de/cms/LTT/Der-Lehrstuhl/Team/Lehrstuhlleitung/~ixkn/Leonhard-Kai/">Kai Leonhard</a>). Here, we use ReaxFF and DFTB to study the phosgenation of alcohols and amines. This is a part of the <a href="https://www.scm.com/about-us/eu-projects/autochemo/">AutoCheMo</a> project.</p>
+        <p>I received my Bachelor of Science degree from the <a href="http://zdysc.dlut.edu.cn/">Zhang Dayu School of Chemistry</a>, Dalian University of Technology. I am very proud of being a member of this class. I was a visiting student at the <a href="http://english.dicp.cas.cn/">Dalian Institute of Chemical Physics</a>, CAS, (Advisor, Prof. <a href="https://www.researchgate.net/profile/Hong_Jun_Fan">Hongjun Fan</a>) and the University of Calgary (<a href="https://www.mitacs.ca/en/programs/globalink">Mitacs Globalink Program</a>, Advisor, Prof. <a href="http://people.ucalgary.ca/~pkusalik/">Peter Kusalik</a>). Click <a href="doc/Zhe Liu CV.pdf">here</a> for my full CV. </p> 
+        <p>During my undergraduate studies, I did some projects in computational chemistry. My previous research includes the photocatalysis of titanium dioxide, the ab-initio molecular dynamics simulations of hydroxyl radical in aqueous solution, and the solvation process in lithium battery electrolytes. I am interested in almost everything in theoretical and computational chemistry, and always open to starting new research. </p> 
+        <p>In my computational chemistry projects, I used <a href="https://www.scm.com/amsterdam-modeling-suite/">AMS</a>, VASP, <a href="http://www.p4vasp.at">p4vasp</a>, <a href="http://jp-minerals.org/vesta/en/">VESTA</a>, <a href="https://www.cpmd.org/wordpress/">CPMD</a>, VMD, and Gaussian under Windows and/or Linux operating systems. I also have the experience in C++, MATLAB, Python, Fortran and LaTex. </p> 
+        <p>Apart from these, I am a <a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a> player (You must have heard of AlphaGo!). I also enjoy visiting meseums, hiking and travelling during my leisure time.</p> 
+       </div> 
+       <div class="tab-pane" id="Research"> 
+        <dl> 
+         <dt>
+          Theoretical Chemistry
+         </dt> 
+         <dd>
+          <dd>
+           <b>Simulate the Quantum Dynamics of the Excitonic Quantum Battery</b> 
+           <i class="far fa-question-circle" href="#mixed" style="color:#007bff;" data-toggle="collapse"></i> 
+           <br />
+           <div id="mixed" class="collapse"> 
+            <span>This project and publications are in progress. Title and contents may change.</span> 
+           </div> 
+           <i>Advisor, Prof. <a href="http://www.chem.ualberta.ca/~hanna/people.html">Gabriel Hanna</a></i> 
+           <span style="float: right">July 2020 - Present</span> 
+           <br />
+           <img src="https://img.shields.io/badge/-C++-17a2b8" class="img-fluid">      
+           <br /> 
+           In a recent <a href="https://pubs.acs.org/doi/10.1021/acs.jpcc.9b06373">study</a>, our group showed that it is possible to indefinitely store an exciton in an invariant symmetry-protected subspace of a quantum network that is coupled to two thermal baths. The exciton can then be extracted by introducing an additional bath that breaks the symmetry of the network. This study demonstrated the potential of using such a system as a quantum energy storage device. We are exploring the parameter space of the previously studied model and identifying parameter regimes that maximize the exciton transfer efficiency to a sink.  
+          </dd>  
+         </dd> 
+         <dd>
+          <b>Mixed Quantum-Classical Liouville Dynamics in the Position Basis</b>
+          <br /> 
+          <i>Advisor, Prof. <a href="http://www.chem.ualberta.ca/~hanna/people.html">Gabriel Hanna</a></i> 
+          <span style="float: right">Nov. 2019 - June 2020</span>
+          <br />
+          <img src="https://img.shields.io/badge/-Python-17a2b8" class="img-fluid">
+          <img src="https://img.shields.io/badge/-Fortran-17a2b8" class="img-fluid"> 
+          <img src="https://img.shields.io/badge/-MATLAB-17a2b8" class="img-fluid">  
+          <br /> 
+          The quantum-classical Liouville equation (QCLE) is a well-known approach to simulating the dynamics of mixed quantum-classical systems – a quantum subsystem coupled to a classical environment. A recently developed “Deterministic evolution of coordinates with initial decoupled equations” (<a href="https://pubs.acs.org/doi/10.1021/acs.jpclett.8b01619">DECIDE</a>) method has demonstrated promise in solving the QCLE with high accuracy and low computational cost for a certain class of model systems. In this project, we investigated the ability of the DECIDE method for treating Hamiltonians expressed in a position basis <a href="#model" data-toggle="collapse">[1]</a>, such as those encountered in the study of proton transfer reactions.
+          <div id="model" class="collapse"> 
+           For example, the <a href="https://aip.scitation.org/doi/10.1063/1.459170">Tully's model</a> and the <a href="https://doi.org/10.1021/acs.jctc.6b00673">Azzouz-Borgis proton-transfer model</a>.
+          </div> 
+         </dd> 
+         <dt>
+          Computational Chemistry
+         </dt> 
+         <dd>
+          <b>Reactive Force Field Parameterization for Phosgenation of Alcohols and Amines</b> 
+          <i class="far fa-question-circle" style="color:#007bff;" href="#Phosgenation" data-toggle="collapse"></i>
+          <br />
+          <a href="https://www.scm.com/amsterdam-modeling-suite"><img src="https://img.shields.io/badge/-AMS-17a2b8"  class="img-fluid"></a>
+          <a href="https://www.scm.com/doc/plams/index.html"><img src="https://img.shields.io/badge/-PLAMS-17a2b8"  class="img-fluid"></a>
+          <img src="https://img.shields.io/badge/-Python-17a2b8" class="img-fluid">
+          <img src="https://img.shields.io/badge/-Gaussian-17a2b8" class="img-fluid">       
+          <br /> 
+          <div id="Phosgenation" class="collapse"> 
+           <span>This project and publications are in progress. Title and contents may change.</span>
+          </div> 
+          <i>Advisor, Prof. <a href="https://www.ltt.rwth-aachen.de/cms/LTT/Der-Lehrstuhl/Team/Lehrstuhlleitung/~ixkn/Leonhard-Kai/">Kai Leonhard</a></i> 
+          <span style="float: right">Sept. 2020 - Present</span> 
+          <br /> 
+          Our group is interested in the phosgenation of alcohols and amines. As no appropriate parameter set for the fast force field ReaxFF is available, we need an extensive training set containing intermediate and transition-states geometries computed at an appropriate quantum-mechanical level to develop such a force field. To generate the training set, we first explored the reaction network <a href="#gif" data-toggle="collapse">[2]</a> with fast classical force fields, such as ReaxFF or DFTB. Then we performed quantum-mechanical reoptimizations for meta-stable intermediate and transition-state geometries. Kinetic theory is then applied to the reoptimized geometries to obtain accurate reaction rate constants.
+          <div id="gif" class="collapse"> 
+           <img src="img/Phosgenation.gif" class="img-fluid rounded" width="202.5">
+          </div> 
+         </dd> 
+         <dd>
+          <b>Theoretical Studies on the Structures and Properties of TiO<sub>2</sub> Surface Adsorbed by Single Metal Atom</b> 
+          <i class="far fa-question-circle" href="#TiO2" style="color:#007bff;" data-toggle="collapse"></i>
+          <br />
+          <img src="https://img.shields.io/badge/-VASP-17a2b8" class="img-fluid">
+          <a href="http://www.p4vasp.at"><img src="https://img.shields.io/badge/-p4vasp-17a2b8" class="img-fluid"></a>
+          <a href="http://jp-minerals.org/vesta/en/"><img src="https://img.shields.io/badge/-VESTA-17a2b8" class="img-fluid"></a>
+          <img src="https://img.shields.io/badge/-VMD-17a2b8" class="img-fluid">      
+          <br /> 
+          <div id="TiO2" class="collapse"> 
+           <span>This project is my undergraduate thesis. The language of the thesis is <b>not English</b>. Contact me for full thesis and slides. </span>
+          </div> 
+          <i>Advisor, Prof. <a href="https://www.researchgate.net/profile/Hong_Jun_Fan">Hongjun Fan</a></i> 
+          <span style="float: right">Jan. 2019 - June 2019</span> 
+          <br />
+          The photocatalytic properties of titanium dioxide (Rutile) will increase after absorbing transition metals on the surface, and it is affected by the atom type, loaded positions and surface structures. In this research, we calculated the single atom loaded rutile surface in different situations. We studied three different surfaces, stoichiometric TiO<sub>2</sub> and two different reduced TiO<sub>2</sub> (In plane oxygen vacancy <a href="#vacancy" data-toggle="collapse">[3]</a> and bridging oxygen vacancy. Previous studies of the first vacancy were insufficient). The results provided us the adsorption energy of metals, geometry and electronic structures of the loaded surfaces. 
+          <div id="vacancy" class="collapse"> 
+           <img src="img/TiO2.jpg" class="img-fluid rounded" width="600">
+          </div> 
+         </dd> 
+         <dd>
+          <b>Probing Reactions of the Hydroxyl Radical in Aqueous Environments</b>  
+          <br /> 
+          <div id="OHradical" class="collapse"> 
+           <span><i>Collaborator: <a href="https://www.linkedin.com/in/carlos-enriquez-victorero-9518317b/">Carlos Enriquez-Victorero</a></i></span> 
+          </div> 
+          <i>Advisor, Prof. <a href="http://people.ucalgary.ca/~pkusalik/">Peter Kusalik</a></i> 
+          <span style="float: right">July 2018 - Oct. 2018</span>
+          <br />
+          <a href="https://www.cpmd.org/wordpress"><img src="https://img.shields.io/badge/-CPMD-17a2b8" class="img-fluid"></a>
+          <img src="https://img.shields.io/badge/-VMD-17a2b8" class="img-fluid">  
+          <br /> 
+          We performed ab-initio molecular dynamics simulations (Car–Parrinello molecular dynamics, 
+          <a href="https://www.cpmd.org/wordpress/">CPMD</a>) for hydroxyl radical and chlorine in aqueous solution. The CPMD method introduced the fictitious electron mass to prevent time-consuming self-consistent calculation in each time step. The simulations provided a description of the geometry and electronics structures of hydroxyl radical and chlorine, and the interactions between them and water molecules. Our results helped us understand the effect of different electron mass. 
+         </dd> 
+         <dd>
+          <b>Theoretical Studies on the Solvated Structures and Properties of Lithium Ions in Dimethyl Carbonate</b>
+          <br /> 
+          <i>Advisor, Prof. <a href="http://people.ucas.ac.cn/~0010415?language=en">Hongjun Fan</a></i> 
+          <span style="float: right">June 2017 - June 2018</span> 
+          <br />
+          <img src="https://img.shields.io/badge/-Gaussian-17a2b8" class="img-fluid"> 
+          <br /> 
+          We have noted an abnormal increasing of the coordination number of lithium in Dimethyl Carbonate (DMC, a commonly used electrolyte in Lithium batteries) when decreasing the concentrations. To investigate this phenomenon, we calculated the solvation energies and structures of the lithium solution complex. We also proposed some improvement methods for our previous coordination number 
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.6b01664">measurement</a>. 
+         </dd>
+        </dl> 
+       </div> 
+       <div class="tab-pane" id="Other"> 
+        <dl> 
+         <dt>
+          Teaching Experience
+         </dt> 
+         <dd></dd> 
+         <dd>
+          <b>CHEM 10X</b> General Chemistry Experiments 
+          <br /> Teaching Assistant <img src="https://img.shields.io/badge/Instructor%20Evaluation-Excellent-success" class="img-fluid"> 
+          <span style="float: right">Jan. 2020 - Apr. 2020</span>
+          <br /> 
+          <b>CHEM 303</b> Environmental Chemistry &nbsp; 
+          <i>Course Instructor: Prof. <a href="https://spaces.facsci.ualberta.ca/gibbs/">Julianne M Gibbs</a></i> 
+          <br /> Teaching Assistant <img src="https://img.shields.io/badge/Instructor%20Evaluation-Excellent-success" class="img-fluid"> 
+          <span style="float: right; ">Sept. 2019 - Dec. 2019</span> 
+         </dd> 
+         <dt>
+          AIChE Chem-E-Car Competition 
+          <span style="float: right; font-weight: normal">Mar. 2017 - Sept. 2017</span> 
+         </dt> 
+         <dd> 
+          <div class="entry-content"> 
+           <ul> 
+            <li>About this <a href="https://www.aiche.org/community/students/chem-e-car">Competition</a></li> 
+            <li>I am a member of the team of Dalian University of Technology. We won <a href="https://www.aiche.org/chenected/2017/06/northwest-university-wins-first-ever-chem-e-car-competitionr-china">the second plcae</a> among 17 top universities in China.</li> 
+            <li>My work included developing a mathematical model to predict the time of iodine-clock reaction</li> 
+           </ul> 
+          </div> 
+         </dd> 
+         <dt>
+          Select Awards and Scholarships
+         </dt> 
+         <dd>
+          RWTH Aachen – University of Alberta Junior Research Fellowship
+          <span style="float: right">2020</span>
+          <br />
+          Globalink Graduate Fellowship, <a href="https://www.mitacs.ca/en/programs/globalink/globalink-graduate-fellowship">Mitacs</a> 
+          <span style="float: right">2019</span>
+          <br /> 
+          Outstanding Graduates, Dalian University of Technology 
+          <span style="float: right">2019</span>
+          <br /> 
+          Mitacs - CSC (China Scholarship Council) scholarship 
+          <span style="float: right">2018</span>
+          <br /> 
+          DICP scholarship, Dalian Institute of Chemical Physics 
+          <span style="float: right">2015 - 2016, 2016 - 2017</span>
+          <br /> 
+         </dd> 
+        </dl> 
+       </div> 
+      </div> 
+     </div> 
+     <p></p> 
+     <p></p> 
+     <p></p> 
+     <p></p> 
+    </div> 
+   </div> 
+  </div> 
+  <hr /> 
+  <footer class="footer"> 
+   <div class="container-md"> 
+    <p>Last update 24 Nov. 2020</p> 
+   </div>  
+  </footer>  
+ </body>
 </html>
